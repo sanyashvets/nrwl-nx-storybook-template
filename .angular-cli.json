@@ -54,6 +54,7 @@
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../../../node_modules/bootstrap/scss/bootstrap.scss",
         "styles.scss"
       ],
       "scripts": [],
@@ -80,6 +81,7 @@
       "testTsconfig": "../../../tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../../../node_modules/bootstrap/scss/bootstrap.scss",
         "styles.scss"
       ],
       "scripts": [],
@@ -88,6 +90,13 @@
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       },
+      "tags": []
+    },
+    {
+      "name": "mymodule",
+      "root": "libs/mymodule/src",
+      "test": "../../../test.js",
+      "appRoot": "",
       "tags": []
     },
     {
