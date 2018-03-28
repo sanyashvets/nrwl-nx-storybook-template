@@ -14,6 +14,22 @@
     {
       "project": "./tsconfig.spec.json",
       "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/app-one/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/app-one/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/app-two/src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "apps/app-two/e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
     }
   ],
   "test": {
@@ -22,6 +38,58 @@
     }
   },
   "apps": [
+    {
+      "name": "app-one",
+      "root": "apps/app-one/src",
+      "outDir": "dist/apps/app-one",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "tags": []
+    },
+    {
+      "name": "app-two",
+      "root": "apps/app-two/src",
+      "outDir": "dist/apps/app-two",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "../../../test.js",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "../../../tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.scss"
+      ],
+      "scripts": [],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      },
+      "tags": []
+    },
     {
       "name": "$workspaceRoot",
       "root": ".",
