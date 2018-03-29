@@ -4,15 +4,11 @@ import { NgModule } from '@angular/core';
 import { MymoduleModule } from '@stratyfy/mymodule';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent, pathMatch: 'full'}
+  { path: '', component: HomeComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes), MymoduleModule
-  ],
-  exports: [
-    RouterModule, MymoduleModule
-  ]
+  imports: [RouterModule.forRoot(routes), MymoduleModule],
+  exports: [RouterModule, MymoduleModule]
 })
 export class AppRoutingModule {}

@@ -7,13 +7,14 @@ describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HomeComponent ],
-      schemas: [NO_ERRORS_SCHEMA]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [HomeComponent],
+        schemas: [NO_ERRORS_SCHEMA]
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HomeComponent);

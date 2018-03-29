@@ -100,6 +100,13 @@
       "tags": []
     },
     {
+      "name": "user.service",
+      "root": "libs/user.service/src",
+      "test": "../../../test.js",
+      "appRoot": "",
+      "tags": []
+    },
+    {
       "name": "$workspaceRoot",
       "root": ".",
       "appRoot": ""
